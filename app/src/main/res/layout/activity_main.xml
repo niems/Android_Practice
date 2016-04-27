@@ -4,6 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+
+    android:background="#46494C"
     tools:context="com.example.niems.androidtest.MainActivity">
 
     <EditText android:id="@+id/edit_message"
@@ -11,12 +13,19 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:hint="@string/edit_message"
-        />
+        android:background="#4C5C68"
+        android:textColorHint="#DCDCDD"
+        android:textColor="#DCDCDD"
+        android:textColorHighlight="#1985A1"
+        android:textCursorDrawable="@null"
+        android:textSize="20sp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/button_send"
+        android:background="#4C5C68"
+        android:textColor="#DCDCDD"
         android:onClick="sendMessage"/>
 
 </LinearLayout>
