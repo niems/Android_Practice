@@ -28,6 +28,18 @@ public class DisplayMessageActivity extends AppCompatActivity {
         layout.addView(text_view);
     }
 
+    public void onPause(){
+        super.onPause();
+
+        //other stuff to do while paused
+    }
+
+    public void onResume(){
+        super.onResume();
+
+        //other stuff to do while resuming
+    }
+
     public String checkMessage(String message){
 
         switch(message){

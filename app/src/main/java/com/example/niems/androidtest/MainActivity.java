@@ -18,6 +18,18 @@ public class MainActivity extends AppCompatActivity {
         this.setTitleColor(Color.BLUE);
     }
 
+    public void onPause(){
+        super.onPause();
+
+        //other stuff to do while paused
+    }
+
+    public void onResume(){
+        super.onResume();
+
+        //other stuff to do while resuming
+    }
+
     public void sendMessage(View view){
         Intent intent = new Intent(this, DisplayMessageActivity.class); //creates the intent to start the new activity
         EditText edit_text = (EditText) findViewById(R.id.edit_message);
@@ -26,5 +38,7 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtra(EXTRA_MESSAGE, message);
         startActivity(intent);
     }
+
+
 
 }
